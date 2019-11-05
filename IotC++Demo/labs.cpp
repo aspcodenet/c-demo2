@@ -315,6 +315,7 @@ void lab1()
 
 int mai3312312n()
 {
+
 	ToLowerLab();
 	ToLower2Lab();
 	lab7();

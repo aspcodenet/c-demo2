@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm> 
+#include <map>
 
 using namespace std;
 
@@ -15,7 +16,24 @@ void vector5()
 
 void vector7()
 {
-	vector<int> v{ 31312,312231,312,43,23,45,565465,31 };
+	vector<int> v{ 31312,312231,312,43,23,312,45,23,565465,23,31 };
+	std::map<int, int> counters;
+	for (auto i : v)
+	{
+		counters[i] = counters[i] + 1;
+	}
+	int maxValue = 0;
+	int maxValueCount = 0;
+	for (auto i : counters)
+	{
+		if (i.second > maxValueCount)
+		{
+			maxValueCount = i.second;
+			maxValue = i.first;
+		}
+	}
+
+	cout << maxValue << " finns " << maxValueCount << " ggr\n";
 }
 
 void vector6()
