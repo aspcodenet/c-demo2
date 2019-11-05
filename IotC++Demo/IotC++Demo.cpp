@@ -10,22 +10,22 @@ float CalculateVat(float varde, float vatRate = 0.25f)
 	return varde * vatRate;
 }
 
-int Summera(int tal1, int tal2)
-{
-	return tal1 + tal2;
-}
-
-int Summera(int tal1, int tal2, std::string message)
-{
-	cout << message;
-	return tal1 + tal2;
-}
-
-
-float Summera(float f1, float f2)
-{
-	return f1 + f2;
-}
+//int Summera(int tal1, int tal2)
+//{
+//	return tal1 + tal2;
+//}
+//
+//int Summera(int tal1, int tal2, std::string message)
+//{
+//	cout << message;
+//	return tal1 + tal2;
+//}
+//
+//
+//float Summera(float f1, float f2)
+//{
+//	return f1 + f2;
+//}
 
 void change(int &a)
 {
@@ -39,7 +39,7 @@ typedef struct c
 }CARD;
 
 
-int main()
+int mai1n131321()
 {
 	string s = "sdasda";
 	if (s == "Stefan")
@@ -135,12 +135,13 @@ int main()
 	change(a);
 	printf("%d", a);
 
-	int n = Summera(12, 25);
-	float n2 = Summera(12.0f, 25.0f);
+	//int n = Summera(12, 25);
+	//float n2 = Summera(12.0f, 25.0f);
 	float m = CalculateVat(100);
 	float m2 = CalculateVat(200, 0.06f);
 
 
     std::cout << "Hello World!\n";
+	return 0;
 }
 

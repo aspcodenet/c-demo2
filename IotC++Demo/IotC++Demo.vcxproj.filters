@@ -18,5 +18,11 @@
     <ClCompile Include="IotC++Demo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="labs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="vectorDrills.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
