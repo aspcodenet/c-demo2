@@ -26,13 +26,13 @@ void ToLower2Lab()
 	ofstream utfil("c:\\kurser\\aaa2.log", ifstream::out | ifstream::app);
 
 	ifstream infil("c:\\kurser\\aaa.log", ifstream::in);
-	char row[255];
-	while (infil.getline(row, sizeof(row)))
+	string line;
+	while (infil >> line)
 	{
-		for (int i = 0; i < strlen(row); i++)
+		for (int i = 0; i < line.length(); i++)
 		{
-			if(IsWovel(row[i]))
-				row[i] = ::toupper(row[i]);
+			if(IsWovel(line[i]))
+				line[i] = ::toupper(line[i]);
 		}
 		// alt 2
 		//for (char& c : row)
@@ -40,7 +40,7 @@ void ToLower2Lab()
 		//	c = ::tolower(c);
 		//}
 		//alt 3
-		utfil << row << endl;
+		utfil << line << endl;
 	}
 
 }
@@ -53,12 +53,12 @@ void ToLowerLab()
 	ofstream utfil("c:\\kurser\\aaa.log", ifstream::out | ifstream::app);
 
 	ifstream infil("c:\\kurser\\2019-10-29-13-37-39.log", ifstream::in);
-	char row[255];
-	while (infil.getline(row, sizeof(row)))
+	string s;
+	while (infil >> s)
 	{
-		for (int i = 0; i < strlen(row); i++)
+		for (int i = 0; i < s.length(); i++)
 		{
-			row[i] = ::tolower(row[i]);
+			s[i] = ::tolower(s[i]);
 		}
 		// alt 2
 		//for (char& c : row)
@@ -66,7 +66,7 @@ void ToLowerLab()
 		//	c = ::tolower(c);
 		//}
 		//alt 3
-		utfil << row << endl;
+		utfil << s << endl;
 	}
 
 }

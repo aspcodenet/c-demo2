@@ -113,7 +113,7 @@ void vector4()
 
 
 
-int main()
+int ma234234in()
 {
 	vector7();
 	vector6();
