@@ -4,8 +4,16 @@
 #include <iomanip>
 #include <algorithm>
 #include <cstdlib>
+#include "customer.h"
 
 using namespace std;
+
+void testmain()
+{
+	Customer cassda;
+
+}
+
 
 bool IsWovel(char ch)
 {
